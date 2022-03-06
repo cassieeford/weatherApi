@@ -23,21 +23,23 @@ function SetLocation(props) {
             onChange={(e) => setCountry(e.target.value)}
           >
             {CountryCodes.map((country) => (
-              <option type="submit" value={country.Code}>
-                {country.Code}-{country.Name}
+              <option type="submit" value={country.Code} defaultValue="">
+                {country.Name}
               </option>
             ))}
           </select>
           <b className="header">POST CODE:</b>
+
           <label>
             <input
               type="text"
-              className="search-bar"
+              className="search-postcode"
               // placeholder="Search..."
               onChange={(e) => setPostCode(e.target.value)} //put postcode in State
               name="postCode"
             />
           </label>
+
           <br></br>
           <button type="submit">GO</button>
         </form>

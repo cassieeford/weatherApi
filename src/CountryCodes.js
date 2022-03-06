@@ -1,4 +1,5 @@
 const CountryCodes = [
+  { Code: "", Name: "" },
   { Code: "AF", Name: "Afghanistan" },
   { Code: "AX", Name: "Aland Islands" },
   { Code: "AL", Name: "Albania" },
